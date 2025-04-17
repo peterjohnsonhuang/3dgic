@@ -1,0 +1,5 @@
+# ninja log v5
+0	5951	1720948940138462023	/home/pj/Desktop/data/RelightableGrouping/bvh/build/temp.linux-x86_64-cpython-310/home/pj/Desktop/data/RelightableGrouping/bvh/src/trace.o	791d69cc07d74d49
+0	6874	1720948941062474351	/home/pj/Desktop/data/RelightableGrouping/bvh/build/temp.linux-x86_64-cpython-310/home/pj/Desktop/data/RelightableGrouping/bvh/src/construct.o	6ea814ca7220bb19
+0	8497	1720948942682495978	/home/pj/Desktop/data/RelightableGrouping/bvh/build/temp.linux-x86_64-cpython-310/home/pj/Desktop/data/RelightableGrouping/bvh/src/bindings.o	2f194259e1095c94
+0	22633	1720948956818685355	/home/pj/Desktop/data/RelightableGrouping/bvh/build/temp.linux-x86_64-cpython-310/home/pj/Desktop/data/RelightableGrouping/bvh/src/bvh.o	884b6fd7f3279469

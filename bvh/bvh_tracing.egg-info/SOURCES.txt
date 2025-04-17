@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+/home/pj/Desktop/data/RelightableGrouping/bvh/src/bindings.cpp
+/home/pj/Desktop/data/RelightableGrouping/bvh/src/bvh.cu
+/home/pj/Desktop/data/RelightableGrouping/bvh/src/construct.cu
+/home/pj/Desktop/data/RelightableGrouping/bvh/src/trace.cu
+bvh_tracing.egg-info/PKG-INFO
+bvh_tracing.egg-info/SOURCES.txt
+bvh_tracing.egg-info/dependency_links.txt
+bvh_tracing.egg-info/top_level.txt

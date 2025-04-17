@@ -1,0 +1,5 @@
+# ninja log v5
+1	6024	1713151462099525732	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/build/temp.linux-x86_64-cpython-37/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/src/trace.o	20e83f0b00d8d997
+0	6839	1713151462915563335	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/build/temp.linux-x86_64-cpython-37/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/src/construct.o	2cfe95c5f4db9fb7
+0	8853	1713151464923655865	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/build/temp.linux-x86_64-cpython-37/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/src/bindings.o	eaa7a7dc0b6d91be
+0	21408	1713151477484234551	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/build/temp.linux-x86_64-cpython-37/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/bvh/src/bvh.o	91c3389b1c277b16
