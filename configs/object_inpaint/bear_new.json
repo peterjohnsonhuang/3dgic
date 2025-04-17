@@ -1,0 +1,22 @@
+{
+    "num_classes": 256,
+    "removal_thresh": 0.5,
+    "select_obj_id" : [34],
+    "images": "substitude",
+    "object_path" : "inpaint_2d_unseen_mask",
+    "depth_path" : "depth_removal",
+    "r" : 1,
+    "lambda_dlpips" : 0.5,
+    "finetune_iteration": 10000,
+    "exp_setting": "3dgic",
+    "source_path": "./data/bear",
+    "reg3d_interval": 5,
+    "reg3d_k": 5,
+    "reg3d_lambda_val": 2,
+    "reg3d_max_points": 10000,
+    "reg3d_sample_size": 100,
+    "use_ref": 1,
+    "use_base": 0,
+    "skip_init": "False",
+    "ref_id": [1,6,31]
+}

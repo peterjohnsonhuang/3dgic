@@ -1,0 +1,9 @@
+{
+    "num_classes": 256,
+    "removal_thresh": 0.99,
+    "select_obj_id" : [34],
+    "object_path" : "object_mask",
+    "depth_path" : "depth_removal",
+    "source_path": "./data/bear"
+
+}

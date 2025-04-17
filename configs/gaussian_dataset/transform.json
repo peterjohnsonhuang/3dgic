@@ -1,0 +1,13 @@
+{
+    "counter": {
+        "path": "./output/NeRF_Syn/mipnerf360/counter_0817_relight/neilf/point_cloud_object_inpaint/r3dgg_relight_iteration_19999/point_cloud.ply",
+        "transform": "None"
+    },
+    "bear": {
+        "path": "./output/NeRF_Syn/bear_relight_0825/neilf/point_cloud_object_inpaint/r3dgg_relight_sub2_0828_iteration_4999/point_cloud.ply",
+        "transform": "None"
+    }
+    
+
+}
+
