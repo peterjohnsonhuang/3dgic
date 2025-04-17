@@ -1,0 +1,13 @@
+data/
+output/
+*.png
+*.jpg
+*.jpeg
+*.png
+*.pth
+*.ply
+*.pt
+*.db
+*.tar
+*.zip
+
