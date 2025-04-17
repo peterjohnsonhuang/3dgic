@@ -1,0 +1,7 @@
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_removal.sh ./output/NeRF_Syn/lerf/figurines_relighting_0911/neilf/ ./configs/object_removal/lerf/figurines.json neilf ./output/NeRF_Syn/lerf/figurines_relighting_0911/neilf/chkpnt70000.pth
+bash ./script/edit_object_inpaint.sh ./output/NeRF_Syn/lerf/figurines_relighting_0911/neilf/ ./configs/object_inpaint/lerf/figurines.json 
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_inpaint_relight.sh ./output/NeRF_Syn/lerf/figurines_relighting_0911/neilf/ ./configs/object_inpaint/lerf/figurines.json ./output/NeRF_Syn/lerf/figurines_relighting_0911/neilf/chkpnt70000.pth
+
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_removal.sh ./output/NeRF_Syn/mipnerf360/counter_0925_relight/neilf/ ./configs/object_removal/mipnerf360/counter.json neilf ./output/NeRF_Syn/mipnerf360/counter_0925_relight/neilf/chkpnt92500.pth
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_inpaint_relight.sh ./output/NeRF_Syn/mipnerf360/counter_0925_relight/neilf/ ./configs/object_inpaint/mipnerf360/counter.json ./output/NeRF_Syn/mipnerf360/counter_0925_relight/neilf/chkpnt92500.pth
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_inpaint_relight_spin.sh ./output/NeRF_Syn/spinnerf-dataset/2_0928_relight/neilf/ ./configs/object_inpaint/spinnerf/2.json ./output/NeRF_Syn/spinnerf-dataset/2_0928_relight/neilf/point_cloud_object_inpaint/r3dgg_relight_1008_iteration_999/chkpnt999.pth

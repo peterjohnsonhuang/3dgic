@@ -1,0 +1,4 @@
+# ninja log v5
+0	4783	1720948911414081424	/home/pj/Desktop/data/RelightableGrouping/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/simple_knn.o	4ca3091db93f339b
+0	8245	1720948914874126994	/home/pj/Desktop/data/RelightableGrouping/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o	36ed4239e8230425
+0	19538	1720948926170276301	/home/pj/Desktop/data/RelightableGrouping/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o	4371c2ee2dce0be3

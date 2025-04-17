@@ -1,0 +1,4 @@
+# ninja log v5
+0	4994	1713151363658984001	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/simple_knn.o	9c577a1dae00c3ac
+0	8959	1713151367619166937	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/ext.o	f91a508def2bdd1d
+0	18930	1713151377595627698	/mnt/sdb/timothy/Desktop/2024Fall/Relightable3DGaussian/submodules/simple-knn/build/temp.linux-x86_64-cpython-37/spatial.o	98371a1eae01ca07
