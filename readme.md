@@ -2,6 +2,8 @@
 > Sheng-Yu Huang, Zi-Ting Chou, Yu-Chiang Frank Wang <br>
 > [Project Page](https://peterjohnsonhuang.github.io/3dgic-pages/) | [Paper](https://arxiv.org/abs/2502.11801)
 
+The full version of the implementation belongs to the company that sponsored this project. This repository is a suboptimal version, but anyone who wants to compare with our method can treat this repo as official implementation. If you want to get the original results of our method, you can also contact via:
+f08942095@ntu.edu.tw 
 
 <div align="center">
   <img src="img_src/3DGIC_CVPR2025.jpg"/>
