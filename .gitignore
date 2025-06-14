@@ -1,7 +1,7 @@
 data/
 output/
 *.png
-# *.jpg
+*.jpg
 *.jpeg
 *.png
 *.pth
@@ -10,4 +10,5 @@ output/
 *.db
 *.tar
 *.zip
+!img_src/
 
