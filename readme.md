@@ -1,3 +1,12 @@
+# [CVPR 2025] 3D Gaussian Inpainting with Depth-Guided Cross-view Consistency (3DGIC)<br>
+> Sheng-Yu Huang, Zi-Ting Chou, Yu-Chiang Frank Wang <br>
+> [Project Page](https://peterjohnsonhuang.github.io/3dgic-pages/) | [Paper](https://arxiv.org/abs/2502.11801)
+
+
+<div align="center">
+  <img src="img_src/3DGIC_CVPR2025.jpg"/>
+</div>
+
 
 #### Install dependencies
 for all the packages, please see requirements.txt
