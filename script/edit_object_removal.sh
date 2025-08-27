@@ -20,5 +20,5 @@ fi
 
 
 # Remove the selected object
-# python edit_object_removal.py -m ${output_folder} --config_file ${config_file} --skip_test --type ${config_type} -c ${check_point}
-python edit_object_removal.py -m ${output_folder} --config_file ${config_file} --skip_test --render_intersect
+python edit_object_removal.py -m ${output_folder} --config_file ${config_file} --skip_test --type ${config_type} -c ${check_point}
+# python edit_object_removal.py -m ${output_folder} --config_file ${config_file} --skip_test --render_intersect

@@ -315,7 +315,7 @@ def find_intersect_mask(mask_input, viewpoint_cam, views, select_obj_id, id_now,
     # exit()
     
     for idx, view in enumerate(tqdm(views.copy(), desc="intersect mask")):
-        if ((idx < int(id_now+30)) and (idx> (int(id_now)-30))):
+        if ((idx < int(id_now+100)) and (idx> (int(id_now)-100))):
         # if idx in id_list:
             if view.objects is None:
                 if is_pbr:

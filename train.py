@@ -14,7 +14,7 @@ from utils.image_utils import psnr, visualize_depth
 from utils.system_utils import prepare_output_and_logger
 from argparse import ArgumentParser
 from arguments import ModelParams, PipelineParams, OptimizationParams
-from gui import GUI
+# from gui import GUI
 from scene.derect_light_sh import DirectLightEnv
 from scene.gamma_trans import LearningGammaTransform
 from utils.graphics_utils import hdr2ldr
@@ -104,22 +104,22 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
     bg_color = [1, 1, 1] if dataset.white_background else [0, 0, 0]
     background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
 
-    """ GUI """
-    windows = None
-    if args.gui:
-        cam = scene.getTrainCameras()[0]
-        c2w = cam.c2w.detach().cpu().numpy()
-        center = gaussians.get_xyz.mean(dim=0).detach().cpu().numpy()
+    # """ GUI """
+    # windows = None
+    # if args.gui:
+    #     cam = scene.getTrainCameras()[0]
+    #     c2w = cam.c2w.detach().cpu().numpy()
+    #     center = gaussians.get_xyz.mean(dim=0).detach().cpu().numpy()
 
-        render_kwargs = {"pc": gaussians, "pipe": pipe, "bg_color": background, "opt": opt, "is_training": False,
-                         "dict_params": pbr_kwargs}
+    #     render_kwargs = {"pc": gaussians, "pipe": pipe, "bg_color": background, "opt": opt, "is_training": False,
+    #                      "dict_params": pbr_kwargs}
 
-        camera_example = scene.getTrainCameras()[0]
+    #     camera_example = scene.getTrainCameras()[0]
 
-        windows = GUI(cam.image_height, cam.image_width, cam.FoVy,
-                      c2w=c2w, center=center,
-                      render_fn=render_fn, render_kwargs=render_kwargs,
-                      mode='pbr', use_hdr2ldr=camera_example.hdr)
+    #     windows = GUI(cam.image_height, cam.image_width, cam.FoVy,
+    #                   c2w=c2w, center=center,
+    #                   render_fn=render_fn, render_kwargs=render_kwargs,
+    #                   mode='pbr', use_hdr2ldr=camera_example.hdr)
 
     """ Training """
     viewpoint_stack = None
@@ -130,8 +130,8 @@ def training(dataset: ModelParams, opt: OptimizationParams, pipe: PipelineParams
     for iteration in progress_bar:
         gaussians.update_learning_rate(iteration)
 
-        if windows is not None:
-            windows.render()
+        # if windows is not None:
+        #     windows.render()
 
         # Every 1000 its we increase the levels of SH up to a maximum degree
         if iteration % 1000 == 0:

@@ -250,8 +250,11 @@ def readColmapCameras(cam_extrinsics, cam_intrinsics, images_folder, objects_fol
             # image = np.asarray(image)/255.0
             # mask = np.ones_like(image[..., 0])
         except:
-            image = None
-            # image = Image.open(image_path.split('.')[0].removesuffix(os.path.basename(image_path.split('.')[0]))+'{0:05d}.png'.format(idx)) if os.path.exists(image_path.split('.')[0].removesuffix(os.path.basename(image_path.split('.')[0]))+'{0:05d}.png'.format(idx)) else None
+            # image = None
+            # print(idx)
+            # print(image_path.split('.')[0].removesuffix(os.path.basename(image_path.split('.')[0]))+'{0:05d}.png'.format(idx))
+            # input()
+            image = Image.open(image_path.split('.')[0].removesuffix(os.path.basename(image_path.split('.')[0]))+'{0:05d}.png'.format(idx)) if os.path.exists(image_path.split('.')[0].removesuffix(os.path.basename(image_path.split('.')[0]))+'{0:05d}.png'.format(idx)) else None
                 
         if image is not None:
             image = np.asarray(image)/255.0
