@@ -48,9 +48,9 @@ Then you'll have to move the rendered data into you data folder:
 CUDA_LAUNCH_BLOCKING=1 bash ./script/move_data.sh  ./output/NeRF_Syn/bear/3dgs/  ./configs/object_inpaint/bear_new.json ./data/bear
 ```
 
-Now we need to obtain the 2D inpainted reference views. Please select **one or more** reference view (in the example I provided, image IDs 1,6,31 are selected), and use any inpainting model you like (e.g., LAMA, SDXL-inpaint) to inpaint the corresponding rgb image in **data/bear/inpaint_2d_unseen_mask/images** and depth image in **data/bear/inpaint_2d_unseen_mask/depth_removal**.  
+Now we need to obtain the 2D inpainted reference views. Please select **one or more** reference view (in the example I provided, image IDs 1,6,31 are selected), and use any inpainting model you like (e.g., LAMA, SDXL-inpaint) to inpaint the corresponding rgb image in ```data/bear/inpaint_2d_unseen_mask/images``` and depth image in ```data/bear/inpaint_2d_unseen_mask/depth_removal```.  
 
-After you obtained the inpainted images/depths, **replace their original file** in data/bear/inpaint_2d_unseen_mask/images and data/bear/inpaint_2d_unseen_mask/depth_removal. 
+After you obtained the inpainted images/depths, **replace their original file** in ```data/bear/inpaint_2d_unseen_mask/images``` and ```data/bear/inpaint_2d_unseen_mask/depth_removal```. 
 
 And that's all for the data preperation.
 
