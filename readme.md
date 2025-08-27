@@ -21,7 +21,7 @@ You can refer to **install.md** to see how I build my environment
 ## :bookmark_tabs: Todos
 We will be releasing all the following contents:
 - [x] Training and inference code for 3DGIC
-- [ ] Provide example of the Bear dataset
+- [x] Provide example of the Bear dataset
 - [ ] Demo for relighting
 
 
