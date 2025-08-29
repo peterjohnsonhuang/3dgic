@@ -583,10 +583,10 @@ def finetune_inpaint(is_pbr, pbr_kwargs, dataset, pipe, opt, model_path, iterati
                 cropped_gt_image = torch.nn.functional.pad(cropped_gt_image, pd64)
                 cropped_image = torch.nn.functional.pad(cropped_image, pd64)
             
-            # blurrer = Trans.GaussianBlur(kernel_size=(9, 9), sigma=(5, 5))
+            blurrer = Trans.GaussianBlur(kernel_size=(9, 9), sigma=(5, 5))
             # blurrer = Trans.GaussianBlur(kernel_size=(3, 3), sigma=(1, 1))
-            # cropped_gt_image = blurrer(cropped_gt_image)
-            # cropped_image = blurrer(cropped_image)
+            cropped_gt_image = blurrer(cropped_gt_image)
+            cropped_image = blurrer(cropped_image)
             
 
             # print(cropped_image.shape)
@@ -645,7 +645,7 @@ def finetune_inpaint(is_pbr, pbr_kwargs, dataset, pipe, opt, model_path, iterati
                 print(loss_depth)
                 
                 if _use_ref == True:
-                    loss_2d = loss_2d*5.0
+                    loss_2d = loss_2d*1.0
                 torchvision.utils.save_image((depth[3:6]).detach().cpu(), 'test_gt.png')
                 
             else:
@@ -661,7 +661,7 @@ def finetune_inpaint(is_pbr, pbr_kwargs, dataset, pipe, opt, model_path, iterati
             # print(loss)
             loss.backward()
             with torch.no_grad():
-                if (iteration <= 51) and (iteration != 0):
+                if (iteration <= 2000) and (iteration != 0):
                     # Keep track of max radii in image-space for pruning
                     # print(gaussians.max_radii2D.device)
                     # print(visibility_filter.device)
@@ -674,7 +674,7 @@ def finetune_inpaint(is_pbr, pbr_kwargs, dataset, pipe, opt, model_path, iterati
                     
                     if  iteration % 1000 == 0:
                         size_threshold = 20 
-                        gaussians.densify_and_prune(opt.densify_grad_threshold, 0.000, cameras_extent, size_threshold,  opt.densify_grad_normal_threshold)
+                        gaussians.densify_and_prune(opt.densify_grad_threshold, 0.001, cameras_extent, size_threshold,  opt.densify_grad_normal_threshold)
                         print(gaussians._xyz.shape)
                     # if (iteration >= 1000) and (iteration % 600) == 0:
                     #     gaussians.prune(0.005, cameras_extent, size_threshold)
