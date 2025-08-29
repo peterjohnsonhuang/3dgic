@@ -28,9 +28,9 @@ mkdir ${data_folder}/inpaint_2d_unseen_mask/images
 mkdir ${data_folder}/inpaint_2d_unseen_mask/obj_original
 
 cp -r ${output_folder}/train/ours_object_removal/iteration_40000/inpaint_mask_pred/*  ${data_folder}/inpaint_2d_unseen_mask/
-# cp -r ${output_folder}/train/ours_object_removal/iteration_40000/renders/*  ${data_folder}/inpaint_2d_unseen_mask/images/
-# cp -r ${output_folder}/train/ours_object_removal/iteration_40000/depth_removal/*  ${data_folder}/inpaint_2d_unseen_mask/depth_removal/
-# cp -r ${output_folder}/train/ours_object_removal/iteration_40000/gt_objects/*  ${data_folder}/inpaint_2d_unseen_mask/obj_original/
+cp -r ${output_folder}/train/ours_object_removal/iteration_40000/renders/*  ${data_folder}/inpaint_2d_unseen_mask/images/
+cp -r ${output_folder}/train/ours_object_removal/iteration_40000/depth_removal/*  ${data_folder}/inpaint_2d_unseen_mask/depth_removal/
+cp -r ${output_folder}/train/ours_object_removal/iteration_40000/gt_objects/*  ${data_folder}/inpaint_2d_unseen_mask/obj_original/
 
 
 mkdir ${data_folder}/intersect_mask
