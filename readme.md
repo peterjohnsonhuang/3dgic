@@ -59,7 +59,7 @@ And that's all for the data preperation.
 For the 3D inpainting process, just run
 
 ```
-CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_inpaint_spin.sh  ./output/NeRF_Syn/bear/3dgs/  ./configs/object_inpaint/bear_new.json
+CUDA_LAUNCH_BLOCKING=1 bash ./script/edit_object_inpaint_spin.sh  ./output/NeRF_Syn/bear/3dgs/  ./configs/object_inpaint/bear_new.json ./data/bear
 ```
 
 ## Citing
